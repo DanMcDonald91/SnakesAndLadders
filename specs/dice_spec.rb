@@ -12,7 +12,7 @@ class TestDice < Minitest::Test
 
 def test_dice_can_roll
   10.times do 
-  assert_equal(true, @dice.roll <= 6)
+  assert_equal(true, @dice.roll <= 6 && @dice.roll >= 1)
 end
 end
 end
