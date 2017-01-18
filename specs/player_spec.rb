@@ -11,10 +11,15 @@ class TestPlayer < Minitest::Test
 
   end
 
-def test_check_player_name
-  assert_equal("Player1" , @player1.player_name)
- assert_equal("Player2" , @player2.player_name)
- end
+  def test_check_player_name
+    assert_equal("Player1" , @player1.player_name)
+    assert_equal("Player2" , @player2.player_name)
+  end
+
+  def test_player_can_move
+    assert_equal(6, @player1.move(6))
+    assert_equal(4, @player2.move(4))
+  end
 end
 
 
