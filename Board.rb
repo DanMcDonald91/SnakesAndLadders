@@ -1,5 +1,5 @@
 class Board
-  attr_reader :game_board 
+  attr_reader :game_board
 
  def initialize
   @game_board = Array.new(25) {|i| i = 0}
