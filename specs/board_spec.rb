@@ -19,4 +19,8 @@ class TestBoard < Minitest::Test
     assert_equal(25 , @board.game_board.size)
 end
 
+def test_player1_posistion
+  assert_equal(1 , @board.player1_posistion(1))
+
+end
 end

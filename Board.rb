@@ -9,6 +9,11 @@ class Board
   return game_over
  end
 
+ def player1_posistion(player_posistion)
+  return player_posistion
+end
+
+
 
 
 end
