@@ -1,8 +1,8 @@
 class Board
-  attr_reader :game_board
+  attr_reader :game_board 
 
  def initialize
-  @game_board = Array.new(25) 
+  @game_board = Array.new(25) {|i| i = 0}
  end
 
  def game_over(game_over)
@@ -13,8 +13,8 @@ class Board
   return player_posistion
 end
 
-def update_posistion
-  @game_board[0] = 1
+def update_posistion(posistion)
+  @game_board[posistion] = @game_board[posistion] + 1
   end
 
 

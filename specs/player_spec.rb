@@ -17,16 +17,14 @@ class TestPlayer < Minitest::Test
   end
 
   def test_player_can_move
-    assert_equal(6, @player1.move(6))
-    assert_equal(4, @player2.move(4))
+    assert_equal(@player1.player_posistion + 6, @player1.move(6))
+    assert_equal(@player2.player_posistion + 4, @player2.move(4))
   end
   def test_player_can_roll_dice
     10.times do 
     assert_equal(true, @dice.roll <= 6 && @dice.roll >= 1)
+end
 
-
-    
-  end
 
 end
 end

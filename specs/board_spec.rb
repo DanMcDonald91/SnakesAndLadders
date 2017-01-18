@@ -25,7 +25,10 @@ def test_player1_posistion
 end
 
 def test_update_player_posistion
-  assert_equal(1 , @board.update_posistion)
+
+  assert_equal(1, @board.update_posistion(1))
+ 
+
 end
 
 # def test_posistion_occupied
